@@ -10,9 +10,16 @@ module.exports.extension = function() {
     twee.getApplication().use(function(req, res, next){
         res.xml = function(variables) {
             res.set('Content-Type', 'text/xml');
-            res.send(xml({'?xml version="1.0" encoding="utf-8"?' : null, response: variables}));
+            var response = {'?xml version="1.0" encoding="utf-8"?' : null};
+            response[twee.getConfig('extension:twee-xml-response:responseNodeName', 'response')] = variables;
+            res.send(xml());
         };
 
         next();
     });
+};
+
+module.exports.configNamespace = 'twee-xml-response';
+module.exports.config = {
+    "responseNodeName": "response"
 };
