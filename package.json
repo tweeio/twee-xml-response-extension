@@ -1,7 +1,7 @@
 {
     "name": "twee-xml-response-extension",
     "preferGlobal": false,
-    "version": "0.0.3",
+    "version": "0.0.4",
     "author": "Dmitri Mesin <dmitri.mesin@gmail.com>",
     "homepage": "https://github.com/mesin/twee-xml-response-extension",
     "description": "XML Response Extension for Twee.io Framework - MVC Framework for Node.js and io.js based on Express.js.",
