@@ -11,7 +11,7 @@ module.exports.extension = function() {
         res.xml = function(variables) {
             res.set('Content-Type', 'text/xml');
             var response = {'?xml version="1.0" encoding="utf-8"?' : null};
-            response[twee.getConfig('extension:twee-xml-response:responseNodeName', 'response')] = variables;
+            response[twee.getConfig('twee:extension:twee-xml-response:responseNodeName', 'response')] = variables;
             res.send(xml());
         };
 

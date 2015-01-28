@@ -1,10 +1,10 @@
 {
     "name": "twee-xml-response-extension",
     "preferGlobal": false,
-    "version": "0.0.2",
+    "version": "0.0.3",
     "author": "Dmitri Mesin <dmitri.mesin@gmail.com>",
     "homepage": "https://github.com/mesin/twee-xml-response-extension",
-    "description": "XML Response Middleware Extension for Twee.io Framework - MVC Framework for Node.js and io.js based on Express.js.",
+    "description": "XML Response Extension for Twee.io Framework - MVC Framework for Node.js and io.js based on Express.js.",
     "license": "MIT",
     "dependencies": {
         "object-to-xml": "*"
@@ -12,7 +12,7 @@
     "devDependencies": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/mesin/twee-xml-response-extension.git"
+        "url": "https://github.com/tweeio/twee-xml-response-extension.git"
     },
     "keywords": [
         "xml",
@@ -31,6 +31,6 @@
         "api"
     ],
     "bugs": {
-        "url": "https://github.com/mesin/twee-xml-response-extension/issues"
+        "url": "https://github.com/tweeio/twee-xml-response-extension/issues"
     }
 }

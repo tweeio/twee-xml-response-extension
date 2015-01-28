@@ -6,11 +6,31 @@
 [![npm](https://img.shields.io/npm/dm/localeval.svg)](https://github.com/tweeio/twee-framework)
 [![npm](https://img.shields.io/npm/l/express.svg)](https://github.com/tweeio/twee-framework)
 
-XML Response Middleware Extension for Twee.io Framework - MVC Framework for Node.js and io.js based on Express.js.
+XML Response Extension for Twee.io Framework - MVC Framework for Node.js and io.js based on Express.js.
 Supports XML response using this package: https://github.com/wankdanker/node-object-to-xml
 
 To install it use this command:
 
 ```
 npm install twee-xml-response-extension --save
+```
+
+Editing `package.json` of your application:
+
+```
+"dependencies": {
+    "twee-xml-response-extension": "*"
+}
+```
+
+Turning extension `ON` in `application/configs/twee.js`:
+
+```
+module.exports = {
+    "extensions": {
+        "XML Response": {
+            "module": "twee-xml-response-extension"
+        }
+    }
+};
 ```
